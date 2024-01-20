@@ -1,0 +1,33 @@
+Method                   Linked List Runtime      Explination
+
+Add(T element)               O(n)               for linked lists I looped O(n) times till I got to the end of the list then I added it.
+
+Rotate(int n)                O(n)          I looped O(n) to figure out the end of the list then I used another loop to
+                                           find where to start to rotate. These two loops were not nested loops, so they're O(n) each
+
+Merge(List<T>otherList)      O(n)           I had a O(n) loop that went through both lists and with each loop I added one element from either list
+                                            to my new list. If one of the lists had ended and had no more elements in them then I would make a loop outside
+                                            that loop which would traverse through the other list that had leftover elements. These are not nested loops
+                                            so their O(n) each
+
+reverse()                   O(n)            I had one loop that looped n times and with each loop I had reversed an element
+
+
+
+
+Method                   Array List Runtime      Explination
+
+Add(T element)               O(n)               if the list becomes full we have to resize the array and this basically loops through
+                                                the original array and copies everything to the new array. If there was no resizing then it would have
+                                                been O(1)
+
+Rotate(int n)                O(n^2)          I used a nested double for-loop to rotate through my size of elements and the number of
+                                              rotations that needed to happen
+
+Merge(List<T>otherList)      O(n)           I had a O(n) loop that went through both lists and with each loop I added one element from either list
+                                            to my new list. If one of the lists had ended and had no more elements in them then I would make a loop outside
+                                            that loop which would traverse through the other list that had leftover elements. These are not nested loops
+                                            so their O(n) each
+
+reverse()                   O(n)            I had one loop that looped sizeofList/2 times, which only reversed
+                                            half the list bc the middle element did not need to be reversed
